@@ -4,152 +4,192 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-        <title>Forest Group</title>
         <script src="https://kit.fontawesome.com/5dab00f4ea.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
         <link rel="stylesheet" href="./dist/css/style.min.css">
+        <title>Forest Group</title>
     </head>
 
-    <body data-bs-spy="scroll" data-bs-target="#navId">
-        <button class="hamburger "><i class="fa-solid fa-bars hamburgerIcon"></i></button>
-
-
-
-        <nav class="nav nav-mobile">
-            <p class="nav-mobile__logo"><i class="fa-solid fa-tree"></i> Forest</p>
-            <a href="" class="nav-mobile__link line">Home</a>
-            <a href="" class="nav-mobile__link line">O nas</a>
-            
-            <a href="" class="nav-mobile__link line">Oferta</a>
-            
-            <a href="" class="nav-mobile__link">Kontakt</a>
-        </nav>
-
-
-
-        <nav class="nav nav-desktop">
-            <div class="wrapper nav__wrapper">
-                <p class="logo"><i class="fa-solid fa-tree"></i> Forest</p>
-                <div class="nav__links">
-                    <a href="" class="nav__link">Home</a>
-                    <a href="" class="nav__link">O nas</a>
-                    <a href="" class="nav__link">Oferta</a>
-                    <a href="" class="nav__link">Kontakt</a>
-                </div>
-            </div>
-        </nav>
-
-
-
-        <header id="home" class="header">
-
-
-            <div class="header__img">
-                <div class="header__shadow"></div>
-                <div class="header__text">
-                    <h1 class="company-name"> Forest Group </h1>
-                    <p> Najpiękniejszy park w Twojej okolicy! </p>
+    <body>
+        <nav>
+            <div class="nav">
+                <a class="logo" href="#home"><i class="fa-solid fa-tree"></i> Forest</a>
+                <div class="nav__items">
+                    <a href="#home" class="nav__items__item underline">Home</a>
+                    <a href="#aboutus" class="nav__items__item underline">O nas</a>
+                    <a href="#offer" class="nav__items__item underline">Oferta</a>
+                    <a href="./html/contact.html" class="nav__items__item">Kontakt</a>
                 </div>
 
             </div>
+            <button class="burger-btn">
+                <div class="burger-btn__box">
+                    <div class="burger-btn__bars">
+                        <i class="fa-solid fa-bars visible hamburgerIcon"></i>
+                        <i class="fa-solid fa-xmark vanish hamburgerIcon"></i>
+                    </div>
+                </div>
+            </button>
+        </nav>
+        <header>
+            <section class="dark-section section" id="home">
+                <div class="header">
+                    <div class="header__img" alt="zdjęcie drewnianych schodów w lesie">
+
+                    </div>
+                    <div class="text-box">
+                        <p class='name header__text'>Forest Group</p>
+                        <h1 class="header__text">Najpiękniejszy park w Twojej okolicy!</h1>
+                    </div>
+
+                    <div class="header__shadow"></div>
+                    <div class="header__arrows">
+                        <i class="fa-regular fa-circle"></i>
+                        <a href="#aboutus" class="arrow"><i class="fa-solid fa-chevron-down bounce-top"></i></a>
+
+                    </div>
+                </div>
+            </section>
         </header>
-        <section id="aboutus">
-            <div class="wrapper">
-                <h2>o nas</h2>
-                <div class="aboutus__photo">
-                    <img src="" alt="jezioro w zielonym lesie">
+        <main>
+            <section class="white-section section aboutus" id="aboutus">
+                <div class="title">
+                    <h2>o nas</h2>
                 </div>
-                <div class="aboutus__text">
-                    <h3>Niezapomniane przygody</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum. www.MMCSchool.pl</p>
-                </div>
-            </div>
-        </section>
-        <section id="banner">
-            <div class="banner">
-                <div class="banner__img">
-                    <img src="" alt="dziecko z plecakiem na wycieczce w lesie">
-                </div>
-                <div class="banner__text">
-                    <p>Przygoda dla całej rodziny</p>
-                </div>
-                <div class="banner__shadow"></div>
-            </div>
-        </section>
-        <section id="offer">
-            <div class="wrapper">
-                <h2>Oferta</h2>
-                <div class="offer-text">
-                    <p>Wybierz jedną z naszych wspaniałych ofert!</p>
-                </div>
-                <div class="offer-cards">
-                    <div class="card">
-                        <div class="card__tile">Demo</div>
-                        <div class="card__price">$0</div>
-                        <div class="card__options">
-                            <div class="card__options__option">
-                                <div class="option-icon"></div>
-                                <div class="option-text"></div>
-                            </div>
-                            <div class="card__options__option">
-                                <p class="option-text in"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
-                                <p class="option-text in"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
-                                <p class="option-text out"><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
-                                <p class="option-text out"><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
-                                <p class="option-text out"><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
-                            </div>
-                        </div>
-                        <button class="card__button">Wybierz</buttom>
+                <div class="aboutus__content">
+                    <div class="aboutus__content__img">
+                        <img src="./dist/img/mini-lake.webp" alt="jezioro w zielonym lesie z malutką wyspą">
                     </div>
-                    <div class="card">
-                        <div class="card__tile">Standard</div>
-                        <div class="card__price">$99</div>
-                        <div class="card__options">
-                            <div class="card__options__option">
-                                <div class="option-icon"></div>
-                                <div class="option-text"></div>
-                            </div>
-                            <div class="card__options__option">
-                                <p class="option-text in"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
-                                <p class="option-text in"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
-                                <p class="option-text in"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
-                                <p class="option-text out"><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
-                                <p class="option-text out"><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
-                            </div>
-                        </div>
-                        <button class="card__button recommend">Wybierz</buttom>
+                    <div class="aboutus__content__text">
+                        <h3 class="aboutus__content__text__title">Niezapomniane Przygody</h3>
+                        <p class="aboutus__content__text__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum. www.MMCSchool.pl</p>
                     </div>
-                    <div class="card">
-                        <div class="card__tile">Premium</div>
-                        <div class="card__price">$299</div>
-                        <div class="card__options">
-                            <div class="card__options__option">
-                                <div class="option-icon"></div>
-                                <div class="option-text"></div>
-                            </div>
-                            <div class="card__options__option">
-                                <p class="option-text in"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
-                                <p class="option-text in"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
-                                <p class="option-text in"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
-                                <p class="option-text in"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
-                                <p class="option-text in"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
-                            </div>
+                    <div class="aboutus__content__shadow"></div>
+                </div>
+
+            </section>
+            <section class="section dark-section banner">
+                <div class="banner__wrapper full-size">
+                    <div class="banner__wrapper__img full-size">
+                        <img class="full-size kid-img" src="./dist/img/mini-kid.webp"
+                            alt="dziecko idące po ścieżce w lesie, z żółtym plecakiem na plecach">
+                        <div class="shadow full-size"></div>
+                        <div class="banner__wrapper__img__text full-size">
+                            <p class="text">Przygoda dla całej rodziny</p>
                         </div>
-                        <button class="card__button">Wybierz</buttom>
                     </div>
                 </div>
+            </section>
+            <section id="offer" class="section white-section offer">
+                <div class="offer__wrapper">
+                    <div class="offer__wrapper__title title">
+                        <h2>oferta</h2>
+                    </div>
+                    <div class="offer__wrapper__box">
+                        <p class="text">Wybierz jedną z naszych wspaniałych ofert!</p>
+                        <div class="offer__wrapper__box__cards">
+                            <div class="offer__wrapper__box__cards__card">
+                                <p class="offer__wrapper__box__cards__card__name">Demo</p>
+                                <p class="offer__wrapper__box__cards__card__price">$0</p>
+                                <ul class="offer__wrapper__box__cards__card__list">
+                                    <li class="offer__wrapper__box__cards__card__list__li"><i
+                                            class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                                    <li class="offer__wrapper__box__cards__card__list__li"><i
+                                            class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                                    <li class="offer__wrapper__box__cards__card__list__li disabled"><i
+                                            class="fa-solid fa-minus"></i> opcja poza pakietem</li>
+                                    <li class="offer__wrapper__box__cards__card__list__li disabled"><i
+                                            class="fa-solid fa-minus"></i> opcja poza pakietem</li>
+                                    <li class="offer__wrapper__box__cards__card__list__li disabled"><i
+                                            class="fa-solid fa-minus"></i> opcja poza pakietem</li>
+                                </ul>
+                                <button class="offer__wrapper__box__cards__card__button">Wybierz</button>
+                            </div>
+                            <div class="offer__wrapper__box__cards__card">
+                                <p class="offer__wrapper__box__cards__card__name">Standard</p>
+                                <p class="offer__wrapper__box__cards__card__price">$99</p>
+                                <ul class="offer__wrapper__box__cards__card__list">
+                                    <li class="offer__wrapper__box__cards__card__list__li"><i
+                                            class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                                    <li class="offer__wrapper__box__cards__card__list__li"><i
+                                            class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                                    <li class="offer__wrapper__box__cards__card__list__li"><i
+                                            class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                                    <li class="offer__wrapper__box__cards__card__list__li disabled"><i
+                                            class="fa-solid fa-minus"></i> opcja poza pakietem</li>
+                                    <li class="offer__wrapper__box__cards__card__list__li disabled"><i
+                                            class="fa-solid fa-minus"></i> opcja poza pakietem</li>
+                                </ul>
+                                <button class="offer__wrapper__box__cards__card__button green">Wybierz</button>
+                            </div>
+                            <div class="offer__wrapper__box__cards__card">
+                                <p class="offer__wrapper__box__cards__card__name">Premium</p>
+                                <p class="offer__wrapper__box__cards__card__price">$299</p>
+                                <ul class="offer__wrapper__box__cards__card__list">
+                                    <li class="offer__wrapper__box__cards__card__list__li"><i
+                                            class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                                    <li class="offer__wrapper__box__cards__card__list__li"><i
+                                            class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                                    <li class="offer__wrapper__box__cards__card__list__li"><i
+                                            class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                                    <li class="offer__wrapper__box__cards__card__list__li"><i
+                                            class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                                    <li class="offer__wrapper__box__cards__card__list__li"><i
+                                            class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                                </ul>
+                                <button class="offer__wrapper__box__cards__card__button">Wybierz</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <div class="footer__wrapper__first">
+                    <a class="footer__wrapper__first__logo logo" href="#home"><i class="fa-solid fa-tree"></i>
+                        Forest</a>
+                    <div class="footer__wrapper__first__links">
+                        <div class="footer__wrapper__first__links__aboutus link-list ">
+                            <p class="footer__wrapper__first__links__company__title  link-list__title">O nas</p>
+                            <a class="item" href="">Historia</a>
+                            <a class="item" href="">Parki</a>
+                            <a class="item" href="">Opinie</a>
+                        </div>
+                        <div class="footer__wrapper__first__links__company link-list">
+                            <p class="footer__wrapper__first__links__company__title link-list__title">Nasza firma</p>
+                            <a class="item" href="">Praca</a>
+                            <a class="item" href="">Kadry</a>
+                            <a class="item" href="">Zarząd</a>
+                        </div>
+                        <div class="footer__wrapper__first__links__docs link-list">
+                            <p class="footer__wrapper__first__links__company__title link-list__title">Dokumenty</p>
+                            <a class="item" href="">Wnioski</a>
+                            <a class="item" href="">Rezerwacje</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer__wrapper__second">
+                    <div class="footer__wrapper__second__footer-date">
+                        <p class="footer__wrapper__second__footer-date__text">&copy; <span class="footer__year"></span>
+                            Forest
+                            Group
+                            Company Ltd.</p>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section id="contact"></section>
-        <footer></footer>
+        </footer>
         <script src="./dist/js/main.min.js"></script>
     </body>
 
